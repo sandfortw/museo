@@ -7,7 +7,7 @@ attr_reader :id, :name, :born, :died, :country, :age_at_death
     @born = attributes[:born]
     @died = attributes[:died]
     @country = attributes[:country]
-    @age_at_death = attributes[:age_at_death]
+    @age_at_death = (@died.to_i - @born.to_i)
   end
   
 end

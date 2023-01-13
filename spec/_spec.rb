@@ -139,8 +139,8 @@
 
   it ' has photographs' do
     curator = Curator.new  
-    pry(main)> curator.photographs
-# => []
+    expect(curator.photographs).to eq([])
+
   end
 
   it 'can add photographs' do 
@@ -159,13 +159,12 @@
     })        
     curator.add_photograph(photo_1)
     curator.add_photograph(photo_2)
-    expect(curator.photographs).to eq([photo_1. photo_2])
+    expect(curator.photographs).to eq([photo_1, photo_2])
   end
 
   it ' can have artists' do 
     curator = Curator.new  
-    curator.artists
-# => []
+   expect(curator.artists).to eq([])
   end
 
   it ' can add artists' do
@@ -209,6 +208,6 @@
     curator.add_artist(artist_2)
     expect(curator.find_artist_by_id("1")).to eq(artist_1)
   end
-  
+
  end
  
