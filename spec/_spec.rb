@@ -209,5 +209,20 @@
     expect(curator.find_artist_by_id("1")).to eq(artist_1)
   end
 
+  describe "iteration 3" do
+
+    it '#photographs by artist' do 
+
+    end
+
+    it '#artists_with_multiple_photographs' do 
+
+    end
+
+    it '#photographs_taken_by_artist_from(country)' do
+
+    end
+  end
+
  end
  
